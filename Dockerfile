@@ -1,6 +1,6 @@
 FROM golang:latest
 CMD ["CD $BUILD_HOME"] 
-RUN makdir /app
+RUN mkdir /app
 ADD . /app/
 WORKDIR /app
 RUN go build -o main .
